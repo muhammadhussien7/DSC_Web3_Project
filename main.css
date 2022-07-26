@@ -1,0 +1,443 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.blueviolate{
+  color: blueviolet;
+}
+
+.flex{
+  display: flex;
+}
+
+.space_v{
+  margin: 25px 0px;
+}
+
+.space_h{
+  margin: 0px 25px 0px 0px;
+}
+
+.headline{
+  margin-top: 50px;
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.line{
+  width: 110px;
+  height: 3px;
+  left: 620px;
+  background-color: blueviolet;
+  display: block;
+  position: absolute;
+}
+
+/* ----------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+/* Market */
+
+.market_nav{
+  display: flex;
+  
+}
+
+.market_nav a{
+  text-decoration:none;
+  color: black;
+  margin: 10px 20px;
+
+
+}
+
+.list_item{
+  list-style: none;
+}
+
+.market_item{
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  height: 390px;
+  border: solid gray 1px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #404245;
+  color: white;
+}
+
+.market_img , .market_content{
+  width: 47%;
+
+}
+.market_img{
+  margin: 20px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.market_img img{
+  width: 100%;
+  background-size: cover;
+}
+
+.market_content{
+  padding-top: 20px;
+}
+.market_content .bid,.market_content .ends{
+    display: inline-block;
+    font-size: 15px;
+    line-height: 40px;
+}
+
+.market_content .ends{
+  text-align: right;
+}
+
+.button_view{
+  margin-top: 50px;
+}
+
+/* ---------------------- */
+
+
+
+
+
+
+
+
+
+/*NFT*/
+
+.nft{
+  background-color: rgb(120, 89, 255);
+  color: white;
+}
+
+.create,.nft_process{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 16px;
+}
+
+.create{
+  margin-top: 50px;
+  padding-top: 100px;
+}
+.create_line{
+  left: 20px;
+}
+
+.create_title h2{
+  margin-top: 30px;
+}
+
+.create_button button{
+  width: 400px;
+  height: 46px;
+  border-radius: 50px;
+  background-color: blueviolet;
+  border: 0px;
+  color: white;
+}
+
+
+.nft_all{
+  padding: 0px 16px;
+  width: 30%;
+}
+
+.nft_all h4, .nft_all p{
+  margin: 20px 0px;
+}
+
+.nft_all p{
+  line-height: 200%;
+
+}
+
+.nft_icon{
+  width: 62px;
+  height: 62px;
+  display: inline-block;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.nft_number h6{
+  display: flex;
+  justify-content: end;
+}
+
+/* --------------------- */
+
+
+
+
+
+
+
+
+/* inputs */
+
+.inputs_container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  margin-top: 50px;
+  text-align: left;
+  background-color: #404245;
+  padding: 45px 15px;
+  border-radius: 15px;
+  color: white;
+  font-size: smaller;
+}
+
+.title,.desc,.username,.Price,.Royalties{
+  width: 100%;
+  height: 46px;
+  text-align: left;
+  padding: 0px 15px;
+  background-color: #282b2f;
+  border: 1px solid #404245;
+  border-radius: 25px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  color: #afafaf;
+}
+
+.input1{
+  width: 30%;
+  padding-top: 10px;
+}
+
+.input2{
+  width: 48%;
+}
+
+.file{
+  width: 100%;
+}
+
+.inputs_container button{
+  width: 500px;
+  height: 46px;
+  margin-top: 15px;
+  border-radius: 50px;
+  background-color: blueviolet;
+  border: 0px;
+  color: white;
+
+}
+
+/* --------------------------------------------------------- */
+
+
+
+
+
+
+
+/* preview */
+.preview{
+  width: 100%;
+  color: black;
+}
+
+.preview_info{
+  width: 100%;
+  display: flex;
+}
+
+.preview_img{
+  width: 610px;
+  height: 320px;
+  margin: 5%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.preview_img img{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.preview_details{
+  width: 430px;
+  margin: 5% 0px;
+}
+.preview_details_Dolores{
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.preview_pic{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.preview_pic > img{
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-size: cover;
+  margin-right: 5px;
+}
+
+.preview_salary{
+  display: flex;
+}
+/* ------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+/* gamer */
+
+.gamer_profile{
+  width: 360px;
+  height: 215px;
+  border: solid 2px gray;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.gamer_img,.gamer_info{
+width: 150px;
+height: 215px;
+}
+
+
+.gamer_img>img{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.gamer_info{
+  width: 210px;
+  padding-left: 30px;
+  background-color: rgba(38, 36, 43, 0.993);
+  font-size:1rem;
+}
+
+.gamer_name, .gamer_rank{
+  height: 40%;
+  width: 80%;
+  margin: 5% 0%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.gamer_name{
+  border-bottom: 1px gray solid;
+  font-weight: bolder;
+}
+
+.gamer_name p{
+  font-size: large;
+}
+
+
+.gamer_name p span, .gamer_rank span{
+  font-size: smaller;
+}
+
+#bid{ 
+  font-size: large;
+  font-weight: bolder;
+  
+}
+
+ /* ----------------------------------------------- */
+
+
+
+
+
+
+ /* categories */
+.categories{
+  position: relative;
+}
+
+.categories_items{
+  display: flex;
+  justify-content: space-between;
+}
+
+.categories_item{
+  background-color: #282b2f;
+  border: 1px solid #404245;
+  text-align: center;
+  padding: 30px;
+  border-radius: 20px;
+  color: white;
+  width: 14.66666667%;
+}
+
+.item_img{
+  width: 62px;
+  height: 62px;
+  display: inline-block;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* ----------------------- */
+
+
+
+
+
+
+/* footer */
+.footer{
+  width: 100%;
+  text-align: center;
+  background-color: blueviolet;
+
+}
+
+.copyright{
+  margin: auto;
+  padding: 30px 0px;
+  color: white;
+}
