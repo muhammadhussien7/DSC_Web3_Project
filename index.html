@@ -9,65 +9,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+  <script src="https://kit.fontawesome.com/37df469d9b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-
-<!-- Market -->
-<section>
-  <div class="create">
-    <div class="create_title">
-      <span class="create_line line"></span>
-      <h2>Items Currently In The Market.</h2>
-    </div>
-    <nav >
-      <ul class="market_nav">
-        <a href="#" class="market_btn" data-filter = ""><li class="list_item">All Items</li></a>
-        <a href="#" class="market_btn" data-filter = ""><li class="list_item">Music Art</li></a>
-        <a href="#" class="market_btn" data-filter = ""><li class="list_item">Digital Art</li></a>
-        <a href="#" class="market_btn" data-filter = ""><li class="list_item">Blockchain</li></a>
-        <a href="#" class="market_btn" data-filter = ""><li class="list_item">Virtual</li></a>
-      </ul>
-    </>
-  </div>
-  <div class="market_items">
-    <div class="market_item">
-      <div class="market_img">
-        <img src="./images/market-01.jpg">
-      </div>
-      <div class="market_content">
-        <h4>Music Art Super Item</h4>
-        <div class="preview_pic space_v ">
-          <img src="./images/current-04.jpg" alt="current-02">
-          <h4>Liberty Artist<br>
-            <a href="#">@libertyart</a>
-          </h4>
-        </div> 
-        <span class="create_line line"></span>
-        <div class="bid">
-          Current Bid<br>
-          <span>2.03 ETH</span>
-          <br>($8,240.50)
-        </div>
-        <div class="ends">
-          Ends In<br>
-          <span>4D 08H 15M 42S</span>
-          <br>(July 24th, 2022)
-        </div>
-        <div class="button_view">
-          <a href="details.html">View Item Details</a>
-        </div>       
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
 
 
 
@@ -75,17 +19,19 @@
 
   <!-- NFT -->
   <section class="nft">
-    <div class="create">
-      <div class="create_title">
-        <span class="create_line line"></span>
-        <h2>Create Your NFT & Put It On The Market.</h2>
+    <div class="container">
+      
+      <div class="create">
+        <div class="create_title">
+          <span class="create_line line"></span>
+          <h2>Create Your NFT & Put It On The Market.</h2>
+        </div>
+        <div class="create_button">
+          <button class="relative_h" >Create Your NFT Now</button>
+        </div>
       </div>
-      <div class="create_button">
-        <button>Create Your NFT Now</button>
-      </div>
-    </div>
     <div class="nft_process">
-      <div class="nft_all nft_setup">
+      <div class="nft_all nft_setup relative_v">
         <div class="nft_number">
           <h6>1</h6>
         </div>
@@ -95,7 +41,7 @@
         <h4>Set Up Your Wallet</h4>
         <p>NFT means Non-Fungible Token that are used in digital cryptocurrency markets. There are many different kinds of NFTs in the industry.</p>
       </div>
-      <div class="nft_all nft_add">
+      <div class="nft_all nft_add relative_v">
         <div class="nft_number">
           <h6>2</h6>
         </div>
@@ -105,7 +51,7 @@
         <h4>Add Your Digital NFT</h4>
         <p>There are 5 different HTML pages included in this NFT <span class="blueviolate">website template.</span> You can edit or modify any section on any page as you required.</p>
       </div>
-      <div class="nft_all nft_sell">
+      <div class="nft_all nft_sell relative_v">
         <div class="nft_number">
           <h6>3</h6>
         </div>
@@ -116,36 +62,39 @@
         <p>If you would like to support our TemplateMo website, please visit <span class="blueviolate">our contact page</span> to make a PayPal contribution. Thank you.</p>
       </div>
     </div>
-  </section>
-
-
-
-\
-
-
-  <!-- inputs -->
-  <div class="container">
-  <span class="line"></span>
-  <div class="headline">
-    <h1>Apply For <span class="blueviolate">Your Item </span>Here</h1>
   </div>
-  <form action="">
-    <div class="inputs_container">
+  </section> 
+
+  
+  
+
+
+  
+  <!-- inputs -->
+  <section class="inputs">
+
+    <div class="container">
+      <span class="line"></span>
+      <div class="headline">
+        <h1>Apply For <span class="blueviolate">Your Item </span>Here</h1>
+      </div>
+      <form action="">
+        <div class="inputs_container">
       <div class="input1">   
-          <label for="title">Item Title</label>
-          <input type="title" class="title" placeholder="Ex.lyonKing" autocomplete="on" required>
+        <label for="title">Item Title</label>
+        <input type="title" class="title" placeholder="Ex.lyonKing" autocomplete="on" required>
       </div>
       <div class="input1">
           <label for="desc">Description For Item</label>
           <input type="desc" class="desc" placeholder="Give Us Your idea" autocomplete="on" required>
-      </div>
+        </div>
       <div class="input1">
-          <label for="username">Your Username</label>
-          <input type="username" class="username" placeholder="Ex. @alansmithee" autocomplete="on" required>
+        <label for="username">Your Username</label>
+        <input type="username" class="username" placeholder="Ex. @alansmithee" autocomplete="on" required>
       </div>
       <div class="input2">
-          <label for="Price">Price Of Item</label>
-          <input type="Price" class="Price" placeholder="Price depends on quality. Ex. 0.06 ETH" autocomplete="on" required>
+        <label for="Price">Price Of Item</label>
+        <input type="Price" class="Price" placeholder="Price depends on quality. Ex. 0.06 ETH" autocomplete="on" required>
       </div>
       <div class="input2">
           <label for="Royalties">Royalties</label>
@@ -156,16 +105,20 @@
           <input type="file" class="file">
       </div>
       <div class="input4">
-
-          <button type="submit" class="submit_btn">Submit Your Applying</button>
         
+          <button type="submit" class="submit_btn relative_h">Submit Your Applying</button>
+          
+        </div>
       </div>
-    </div>
-  </form>
+    </form>
   </div>
+</section> 
 
 
-<!-- preview -->
+
+
+  
+  <!-- preview -->
 <section class="preview">
   <div class="container">
     <span class="line"></span>
@@ -212,15 +165,93 @@
 
 
 
-<!-- gamer -->
-
-<div class="gamer_profile">
-  <div class="gamer_img">
-    <img src="./images/current-02.jpg" alt="current-02">
+<!-- categories -->
+ <section class="categories">
+  <div class="container">
+    <span class="line"></span>
+    <div class="headline">
+      <h1>Browse Through Our <span class="blueviolate"> Categories </span>Here.</h1>
+    </div>
+    <div class="categories_items">
+      <div class="categories_item">
+        <div class="item_img">
+          <img class="icon" src="./images/icon-01.png" alt="blockchain_icon">
+        </div>
+        <h4>Blockchain</h4>
+        <div class="icon_button">
+          <a href="#"><i class="fa-solid fa-circle-chevron-right"></i></a></div>
+      </div>
+      <div class="categories_item">
+        <div class="item_img">
+          <img class="icon" src="./images/icon-02.png" alt="blockchain_icon">
+        </div>
+        <h4>Digital Art</h4>
+        <div class="icon_button">
+          <a href="#"><i class="fa-solid fa-circle-chevron-right btn-large"></i></a></div>
+        </div>
+        <div class="categories_item">
+        <div class="item_img">
+          <img class="icon" src="./images/icon-03.png" alt="blockchain_icon">
+        </div>
+        <h4>Music Art</h4>
+        <div class="icon_button">
+          <a href="#"><i class="fa-solid fa-circle-chevron-right btn-large"></i></a></div>
+      </div>
+      <div class="categories_item">
+        <div class="item_img">
+          <img class="icon" src="./images/icon-04.png" alt="blockchain_icon">
+        </div>
+        <h4>Virtual World</h4>
+        <div class="icon_button">
+          <a href="#"><i class="fa-solid fa-circle-chevron-right btn-large"></i></a></div>
+      </div>
+      <div class="categories_item">
+        <div class="item_img">
+          <img class="icon" src="./images/icon-05.png" alt="blockchain_icon">
+        </div>
+        <h4>Valuable</h4>
+        <div class="icon_button">
+          <a href="#"><i class="fa-solid fa-circle-chevron-right btn-large"></i></a></div>
+      </div>
+      <div class="categories_item">
+        <div class="item_img">
+          <img class="icon" src="./images/icon-06.png" alt="blockchain_icon">
+        </div>
+        <h4>Triple NFT</h4>
+        <div class="icon_button">
+          <a href="#"><i class="fa-solid fa-circle-chevron-right btn-large"></i></a>
+        </div>
+      </div>      
+    </div>
   </div>
-  <div class="gamer_info">
-    <div class="gamer_name">
-      <p>David Walker
+</section> 
+
+
+
+  <!-- footer -->
+  <footer>
+    <section>
+      <div class="footer">
+        <p class="copyright">Copyright© 2022 Liberty NFT Marketplace Co., Ltd. All rights reserved. Designed by TemplateMo</p>
+      </div>
+    </section>
+  </footer> 
+
+
+
+
+<!-- gamer -->
+<section class="gamer">
+
+  <div class="container">
+    <div class="gamer_profile">
+      
+    <div class="gamer_img">
+      <img src="./images/current-02.jpg" alt="current-02">
+    </div>
+    <div class="gamer_info">
+      <div class="gamer_name">
+        <p>David Walker
         <span class="blueviolate">@davidwalker</span>
       </p>
       
@@ -234,77 +265,91 @@
     </div>
   </div>
 </div>
+</div>
+</section>
 
 
-<!-- categories -->
-<section class="categories">
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<!-- Market -->
+<section>
   <div class="container">
-  <span class="line"></span>
-  <div class="headline">
-    <h1>Browse Through Our <span class="blueviolate"> Categories </span>Here.</h1>
-  </div>
-  <div class="categories_items">
-    <div class="categories_item">
-      <div class="item_img">
-        <img class="icon" src="./images/icon-01.png" alt="blockchain_icon">
+    <div class="create">
+      <div class="create_title relative_h">
+        <span class="create_line line"></span>
+        <h2>Items Currently In The Market.</h2>
       </div>
-      <h4>Blockchain</h4>
-      <div class="icon_button">
-        <a href="#"><i class="fa fa-angle-right"></i></a></div>
+      <nav >
+        <ul class="market_nav">
+          <a href="#" class="market_btn" data-filter = ""><li class="list_item">All Items</li></a>
+          <a href="#" class="market_btn" data-filter = ""><li class="list_item">Music Art</li></a>
+          <a href="#" class="market_btn" data-filter = ""><li class="list_item">Digital Art</li></a>
+          <a href="#" class="market_btn" data-filter = ""><li class="list_item">Blockchain</li></a>
+          <a href="#" class="market_btn" data-filter = ""><li class="list_item">Virtual</li></a>
+        </ul>
+      </nav>
     </div>
-    <div class="categories_item">
-      <div class="item_img">
-        <img class="icon" src="./images/icon-02.png" alt="blockchain_icon">
-      </div>
-      <h4>Digital Art</h4>
-      <div class="icon_button">
-        <a href="#"><i class="fa fa-angle-right"></i></a></div>
-    </div>
-    <div class="categories_item">
-      <div class="item_img">
-        <img class="icon" src="./images/icon-03.png" alt="blockchain_icon">
-      </div>
-      <h4>Music Art</h4>
-      <div class="icon_button">
-        <a href="#"><i class="fa fa-angle-right"></i></a></div>
-    </div>
-    <div class="categories_item">
-      <div class="item_img">
-        <img class="icon" src="./images/icon-04.png" alt="blockchain_icon">
-      </div>
-      <h4>Virtual World</h4>
-      <div class="icon_button">
-        <a href="#"><i class="fa fa-angle-right"></i></a></div>
-    </div>
-    <div class="categories_item">
-      <div class="item_img">
-        <img class="icon" src="./images/icon-05.png" alt="blockchain_icon">
-      </div>
-      <h4>Valuable</h4>
-      <div class="icon_button">
-        <a href="#"><i class="fa fa-angle-right"></i></a></div>
-    </div>
-    <div class="categories_item">
-      <div class="item_img">
-        <img class="icon" src="./images/icon-06.png" alt="blockchain_icon">
-      </div>
-      <h4>Triple NFT</h4>
-      <div class="icon_button">
-        <a href="#"><i class="fa fa-angle-right"></i></a>
+    <div class="market_items">
+      <div class="market_item">
+        <div class="market_img">
+          <img src="./images/market-01.jpg">
+        </div>
+      <div class="market_content relative_h">
+        <h4>Music Art Super Item</h4>
+        <div class="market_pic space_v ">
+          <img src="./images/current-04.jpg" alt="current-02">
+          <h4>Liberty Artist<br>
+            <a href="#">@libertyart</a>
+          </h4>
+        </div> 
+        <span class="create_line line"></span>
+        <div class="bid">
+          Current Bid<br>
+          <span>2.03 ETH</span>
+          <br>($8,240.50)
+        </div>
+        <div class="ends">
+          Ends In<br>
+          <span>4D 08H 15M 42S</span>
+          <br>(July 24th, 2022)
+        </div>
+        <div class="button_view">
+          <a href="details.html">View Item Details</a>
+        </div>       
       </div>
     </div>
-    
   </div>
 </div>
 </section>
 
 
 
-  <!-- footer -->
-  <footer>
-    <div class="footer">
-      <p class="copyright">Copyright© 2022 Liberty NFT Marketplace Co., Ltd. All rights reserved. Designed by TemplateMo
-      </div>
-  </footer>
+
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,18 +1,19 @@
+/* general */
 *{
   margin: 0%;
   padding: 0%;
+  color: white;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
 
 .container{
-  width: 80%;
+  width: 82%;
   margin: auto;
-  text-align: center;
 }
 
 .blueviolate{
-  color: blueviolet;
+  color: #7453fc;;
 }
 
 .flex{
@@ -36,90 +37,42 @@
 .line{
   width: 110px;
   height: 3px;
-  left: 620px;
-  background-color: blueviolet;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #7453fc;;
   display: block;
   position: absolute;
 }
 
+.relative_h,.relative_v{
+  position: relative;
+}
+
+.relative_h::after{
+  content: "";
+  width: 80%;
+  height: 1.5px;
+  position: absolute;
+  display: block;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+}
+
+.relative_v::after{
+  content: "";
+  width: 1px;
+  height: 80%;
+  position: absolute;
+  display: block;
+  right: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 /* ----------------------------------- */
-
-
-
-
-
-
-
-
-
-
-
-/* Market */
-
-.market_nav{
-  display: flex;
-  
-}
-
-.market_nav a{
-  text-decoration:none;
-  color: black;
-  margin: 10px 20px;
-
-
-}
-
-.list_item{
-  list-style: none;
-}
-
-.market_item{
-  display: flex;
-  justify-content: space-between;
-  width: 40%;
-  height: 390px;
-  border: solid gray 1px;
-  border-radius: 15px;
-  overflow: hidden;
-  background-color: #404245;
-  color: white;
-}
-
-.market_img , .market_content{
-  width: 47%;
-
-}
-.market_img{
-  margin: 20px;
-  height: 350px;
-  overflow: hidden;
-  border-radius: 15px;
-}
-.market_img img{
-  width: 100%;
-  background-size: cover;
-}
-
-.market_content{
-  padding-top: 20px;
-}
-.market_content .bid,.market_content .ends{
-    display: inline-block;
-    font-size: 15px;
-    line-height: 40px;
-}
-
-.market_content .ends{
-  text-align: right;
-}
-
-.button_view{
-  margin-top: 50px;
-}
-
-/* ---------------------- */
-
-
 
 
 
@@ -132,6 +85,7 @@
 .nft{
   background-color: rgb(120, 89, 255);
   color: white;
+  padding-bottom: 50px;
 }
 
 .create,.nft_process{
@@ -141,11 +95,15 @@
 }
 
 .create{
-  margin-top: 50px;
   padding-top: 100px;
 }
 .create_line{
-  left: 20px;
+  left: 75px;
+  width: 150px;
+}
+
+.create_title{
+  position: relative;
 }
 
 .create_title h2{
@@ -156,24 +114,25 @@
   width: 400px;
   height: 46px;
   border-radius: 50px;
-  background-color: blueviolet;
+  background-color: #7453fc;;
   border: 0px;
   color: white;
 }
 
 
 .nft_all{
-  padding: 0px 16px;
-  width: 30%;
+  padding: 0px 0px 0px 5px;
+  width: 33%;
 }
 
 .nft_all h4, .nft_all p{
-  margin: 20px 0px;
+  margin: 20px 10px;
 }
 
 .nft_all p{
   line-height: 200%;
-
+  font-size: 15px;
+  margin-right: 30px;
 }
 
 .nft_icon{
@@ -192,16 +151,44 @@
   justify-content: end;
 }
 
+@media only screen and (max-width: 992px){
+
+  .create,.nft_process{
+    text-align: center;
+    display: block;
+    padding: 30px 16px;
+  }
+
+  .create_line{
+    left: 50%;
+    top: -20px;
+    transform: translateX(-50%);
+  }
+
+  .create_button{
+    margin-top: 30px;
+  }
+
+  .nft_all {
+    width: 100%;
+    text-align: center;
+    margin-top: 45px;
+  }  
+} 
 /* --------------------- */
 
 
 
 
-
-
-
-
 /* inputs */
+
+.inputs{
+  background-image: url(./images/dark-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0px 120px 0px;
+
+}
 
 .inputs_container{
   display: flex;
@@ -238,6 +225,10 @@
   width: 48%;
 }
 
+.submit_btn{
+  position: relative;
+}
+
 .file{
   width: 100%;
 }
@@ -247,17 +238,33 @@
   height: 46px;
   margin-top: 15px;
   border-radius: 50px;
-  background-color: blueviolet;
+  background-color: #7453fc;;
   border: 0px;
   color: white;
 
 }
 
+@media only screen and (max-width: 1010px){
+  .inputs_container button{
+    width:200px
+  }
+  
+}
+
+@media only screen and (max-width: 710px){
+.inputs_container{
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+
+}
+.input1,.input2{
+  width: auto;
+}
+} 
+
 /* --------------------------------------------------------- */
-
-
-
-
 
 
 
@@ -265,6 +272,10 @@
 .preview{
   width: 100%;
   color: black;
+  background-image: url(./images/dark-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0px 120px 0px;
 }
 
 .preview_info{
@@ -273,7 +284,8 @@
 }
 
 .preview_img{
-  width: 610px;
+  width: 100%;
+  max-width: 612px;
   height: 320px;
   margin: 5%;
   border-radius: 20px;
@@ -285,10 +297,13 @@
   height: 100%;
   background-size: cover;
 }
+
 .preview_details{
-  width: 430px;
+  max-width: 430px;
+  width: 100%;
   margin: 5% 0px;
 }
+
 .preview_details_Dolores{
   font-size: larger;
   font-weight: bolder;
@@ -310,12 +325,120 @@
 .preview_salary{
   display: flex;
 }
+
+@media only screen and (max-width:1000px){
+  .preview_info{
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .preview_img{
+    width: 100%;
+    max-width: 1000px;
+  }
+  .preview_details{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    margin-left: 50px;
+    
+  }
+} 
 /* ------------------------------------------------------- */
 
 
 
+ /* categories */
+.categories{
+  position: relative;
+  margin-bottom: 150px;
+  background-image: url(./images/dark-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0px 120px 0px;
+}
+
+.categories_items{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.categories_item{
+  background-color: #282b2f;
+  border: 1px solid #404245;
+  text-align: center;
+  padding: 30px;
+  border-radius: 20px;
+  color: white;
+  width: 14.66666667%;
+  position: relative;
+}
 
 
+.icon_button a i{
+  position: absolute;
+  font-size: xxx-large;
+  left: 50%;
+  top: 86%;
+  transform: translatex(-50%);
+}
+
+
+.item_img{
+  width: 62px;
+  height: 62px;
+  display: inline-block;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width:1000px){
+.categories_item{
+  width: 45%;
+  margin-bottom: 50px;
+}
+}
+
+@media only screen and (max-width:500px){
+  .categories_item{
+    width: 90%;
+    margin-bottom: 50px;
+  }
+  } 
+
+/* ----------------------- */
+
+
+/* footer */
+.footer{
+  width: 100%;
+  text-align: center;
+  background-color: #7453fc;;
+  display: block;
+  padding: 0px 50px;
+}
+
+.copyright{
+  margin: auto;
+  padding: 30px 0px;
+  color: white;
+} 
+
+/* -------------- */
+/* -------------- */
+/* -------------- */
+/* -------------- */
+/* -------------- */
+/* -------------- */
+/* -------------- */
+/* -------------- */
+/* -------------- */
+/* -------------- */
+/* -------------- */
 
 
 
@@ -389,55 +512,80 @@ height: 215px;
 
 
 
+/* Market */
 
- /* categories */
-.categories{
-  position: relative;
+.market_nav{
+  display: flex;
+  
 }
 
-.categories_items{
+.market_nav a{
+  text-decoration:none;
+  color: black;
+  margin: 10px 20px;
+
+
+}
+
+.list_item{
+  list-style: none;
+}
+
+.market_item{
   display: flex;
   justify-content: space-between;
-}
-
-.categories_item{
-  background-color: #282b2f;
-  border: 1px solid #404245;
-  text-align: center;
-  padding: 30px;
-  border-radius: 20px;
+  width: 40%;
+  height: 390px;
+  border: solid gray 1px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #404245;
   color: white;
-  width: 14.66666667%;
 }
 
-.item_img{
-  width: 62px;
-  height: 62px;
-  display: inline-block;
-  background-color: #fff;
-  text-align: center;
-  line-height: 80px;
-  border-radius: 50%;
-  margin-bottom: 15px;
+.market_img , .market_content{
+  width: 47%;
+
 }
-
-/* ----------------------- */
-
-
-
-
-
-
-/* footer */
-.footer{
+.market_img{
+  margin: 20px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.market_img img{
   width: 100%;
-  text-align: center;
-  background-color: blueviolet;
-
+  background-size: cover;
 }
 
-.copyright{
-  margin: auto;
-  padding: 30px 0px;
-  color: white;
+.market_content{
+  padding-top: 20px;
 }
+.market_content .bid,.market_content .ends{
+    display: inline-block;
+    font-size: 15px;
+    line-height: 40px;
+}
+
+.market_content .ends{
+  text-align: right;
+}
+
+.button_view{
+  margin-top: 50px;
+}
+
+.market_pic{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.market_pic > img{
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-size: cover;
+  margin-right: 5px;
+}
+
+/* ---------------------- */
