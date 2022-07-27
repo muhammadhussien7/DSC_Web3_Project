@@ -555,8 +555,8 @@ height: 215px;
     margin-bottom: 50px;
   }
   .gamer_title{
-   display: block;
-   text-align: center;
+    display: block;
+    text-align: center;
   }
   .gamer_head{
     margin-bottom: 15px;
@@ -572,6 +572,12 @@ height: 215px;
 
 /* Market */
 
+.market{
+  background-image: url(./images/dark-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0px 120px 0px;
+}
 .market_nav{
   display: flex;
   
