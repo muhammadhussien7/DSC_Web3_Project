@@ -446,14 +446,51 @@
 
 /* gamer */
 
+.gamer{
+  background-image: url(./images/dark-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0px 120px 0px;
+}
+
+.gamer_title{
+  display: flex;
+  justify-content: space-between;
+}
+
+.gamer_head{
+  background-color: #7453fc;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.gamer_select{
+  width: 150px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.gamers_pro{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 0px;
+  
+}
+
 .gamer_profile{
-  width: 360px;
+  width: 31.5%;
   height: 215px;
-  border: solid 2px gray;
+  border: solid 1px gray;
   border-radius: 20px;
   display: flex;
   justify-content: center;
   overflow: hidden;
+  margin: 10px;
 }
 
 .gamer_img,.gamer_info{
@@ -504,6 +541,28 @@ height: 215px;
   font-weight: bolder;
   
 }
+
+@media only screen and (max-width:1000px){
+  .gamer_profile{
+    width: 45%;
+    margin-bottom: 50px;
+  }
+  }
+
+@media only screen and (max-width:550px){
+  .gamer_profile{
+    width: 90%;
+    margin-bottom: 50px;
+  }
+  .gamer_title{
+   display: block;
+   text-align: center;
+  }
+  .gamer_head{
+    margin-bottom: 15px;
+  }
+  } 
+
 
  /* ----------------------------------------------- */
 
