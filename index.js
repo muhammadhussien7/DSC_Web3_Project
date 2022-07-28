@@ -1,6 +1,5 @@
 const btns = document.querySelectorAll('.market_btn');
 const market_item = document.querySelectorAll('.market_item');
-// const search = document.getElementById(search);
 
 for (i = 0; i < btns.length; i++) {
 
