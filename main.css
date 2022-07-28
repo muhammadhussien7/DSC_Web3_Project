@@ -585,10 +585,6 @@ height: 215px;
   width: 150px;
 }
 
-.market_line{
-  
-}
-
 .market_title{
   position: relative;
 }
@@ -620,7 +616,6 @@ height: 215px;
   display: flex;
   justify-content: space-between;
   width: 48%;
-  height: 390px;
   border: solid gray 1px;
   border-radius: 15px;
   overflow: hidden;
@@ -635,7 +630,6 @@ height: 215px;
 }
 .market_img{
   margin: 20px;
-  height: 350px;
   overflow: hidden;
   border-radius: 15px;
 }
@@ -704,6 +698,17 @@ height: 215px;
     margin-top: 20px;
   }
 }
+@media only screen and (max-width:500px){
+  .market_content h4{
+    font-size: 15px;
+
+  }
+  .market_content .bid,.market_content .ends{
+    display: inline-block;
+    font-size: 10px;
+    line-height: 20px;
+}
+}
 
 /* ---------------------- */
 
@@ -711,8 +716,107 @@ height: 215px;
 
 
 
-.col-lg-6{
-  background-image: url(./images/dark-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 120px 0px 120px 0px;}
+
+
+
+
+
+
+  /* melanie */
+
+  .melanie{
+    background-image: url(./images/dark-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0px 120px 0px;
+  }
+  .melanie_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+
+  .author{
+    display: flex;
+  }
+
+  .author img{
+    border-radius: 50%;
+    max-width: 170px;
+  }
+
+  .author h4{
+    margin-top: 50px;
+    font-size: 20px;
+    margin-left: 30px;
+  }
+  .author h4 a{
+    font-size: 14px;
+    color: #7453fc;
+  }
+
+  .melanie_info{
+    width: 50%;
+  }
+
+  .melanie_likes{
+    background-color: #282b2f;
+    border: 1px solid #404245;
+    padding: 20px 30px;
+    border-radius: 20px;
+  }
+
+  .likes,.followers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 25px;
+    margin: 10px 0px;
+    color: #7453fc;
+  }
+
+  .likes i ,.likes h6{
+    color: #7453fc;
+  }
+
+  .likes span{
+    font-size: 12px;
+  }
+
+  .followers{
+    display: flex;
+    justify-items: center;
+    margin-top: 25px;
+  }
+
+  .followers_button a{
+    font-size: 14px;
+    background-color: #7453fc;
+    border: 1px solid #7453fc;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 25px;
+    letter-spacing: 0.5px;
+  }
+
+  @media only screen and (max-width:1250px){
+    .melanie_container{
+      justify-content: center;
+      
+    }
+    .melanie_info{
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+
+  @media only screen and (max-width:500px){
+    .followers{
+      justify-content: center;
+    }
+    .followers h5,.followers_button{
+      margin-bottom: 15px;
+    }
+
+  }
