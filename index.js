@@ -11,12 +11,12 @@ for (i = 0; i < btns.length; i++) {
         
         market_item.forEach((product)=> {
             if (filter === 'All_Items'){
-                product.style.display = 'flex'
+                product.style.display = 'flex';
             } else {
                 if (product.classList.contains(filter)){
-                    product.style.display = 'flex'
+                    product.style.display = 'flex';
                 } else {
-                    product.style.display = 'none'
+                    product.style.display = 'none';
                 }
             }
         });
