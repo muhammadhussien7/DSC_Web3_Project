@@ -122,14 +122,17 @@ display: flex;
   width:70px;
   padding: 0 10px;
 }
+
 .seller__number{
   font-size: 20px;
   font-weight: bold;
 }
 
 
-
-
+@media only screen and (max-width:700px){
+  .seller__box{
+margin-left: 60px;}
+}
 
 
 /* discover */
@@ -168,6 +171,11 @@ display: flex;
 
 .discover_explore_form button {
   background-color: #7453fc;
+}
+
+
+@media only screen and (max-width:700px){
+
 }
 /* 
 .discover_items{
@@ -958,5 +966,4 @@ height: 215px;
     .followers h5,.followers_button{
       margin-bottom: 15px;
     }
-
   }
