@@ -93,19 +93,28 @@ select option {
   background: url(./images/main-bg.jpg);
   color: #fff;
 }
+
+.seller .line{
+  background-color: white;
+}
+
 .seller__title{
   text-align: center;
+  margin-top: 25px;
 }
+
 .seller__info{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 40px;
 }
+
 .seller__box{
 display: flex;
   align-items: center;
   width: 25%;
+  min-width: 200px;
   margin-bottom: 30px;
 }
 .seller__box img{
