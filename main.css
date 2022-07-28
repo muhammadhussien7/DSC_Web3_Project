@@ -606,13 +606,10 @@ height: 215px;
 
 .market_nav a{
   text-decoration:none;
-  color: black;
+  color: white;
   margin: 10px 20px;
 }
 
-.market_btn li{
-  list-style: none;
-}
 
 .market_items{
   display: flex;
@@ -709,3 +706,13 @@ height: 215px;
 }
 
 /* ---------------------- */
+
+
+
+
+
+.col-lg-6{
+  background-image: url(./images/dark-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0px 120px 0px;}

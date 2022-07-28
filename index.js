@@ -11,15 +11,17 @@ for (i = 0; i < btns.length; i++) {
         console.log(filter);
         
         market_item.forEach((product)=> {
-            if (filter === 'all'){
-                product.style.display = 'block'
+            if (filter === 'All_Items'){
+                product.style.display = 'flex'
             } else {
                 if (product.classList.contains(filter)){
-                    product.style.display = 'block'
+                    product.style.display = 'flex'
                 } else {
                     product.style.display = 'none'
                 }
             }
         });
+
+        
     });
 };
